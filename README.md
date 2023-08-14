@@ -1,3 +1,5 @@
+# CRM сервисной службы медицинского оборудования
+
 # JUPITER project
 
 python manage.py startapp jupiter_api
