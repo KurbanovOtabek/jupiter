@@ -11,22 +11,22 @@ def mainpage(request):
             {
                 "button_link": "admin",
                 "name": "Заявки",
-                "overview": "Работа с заявками на оборудование"
+                "overview": "Работа с заявками на оборудование",
             },
             {
                 "button_link": "devpage",
                 "name": "Персонал",
-                "overview": "Работа с базами персонала"
+                "overview": "Работа с базами персонала",
             },
             {
                 "button_link": "devpage",
                 "name": "Финансы",
-                "overview": "Работа с базами финансов"
+                "overview": "Работа с базами финансов",
             },
             {
                 "button_link": "devpage",
                 "name": "База знаний",
-                "overview": "Работа с базами знаний"
+                "overview": "Работа с базами знаний",
             },
         ]
     }
