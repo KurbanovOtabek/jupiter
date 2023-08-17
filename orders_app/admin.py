@@ -5,7 +5,7 @@ from orders_app.models import Device, Customer, DeviceInField, Order
 
 @admin.register(Device)
 class DeviceAdmin(admin.ModelAdmin):
-    # todo luchanos на случай работы с запчастями можно добавить и поиск по id
+    # todo на случай работы с запчастями можно добавить и поиск по id
     search_fields = ('manufacturer', 'model')
     list_display = ('id', 'manufacturer', 'model')
 
@@ -31,7 +31,7 @@ class DeviceInFieldAdmin(admin.ModelAdmin):
     my_device_manufacturer.short_description = 'Производитель'
     my_device_model.short_description = 'Модель'
 
-    # todo luchanos сделать поиск по контрагентам
+    # todo сделать поиск по контрагентам
     search_fields = ('serial_number', )
     raw_id_fields = ('customer', 'analyzer')
     list_display = ('id', 'my_device_manufacturer', 'my_device_model', 'serial_number', 'my_customer', 'owner_status')
@@ -66,3 +66,5 @@ class OrderAdmin(admin.ModelAdmin):
                      'device__analyzer__manufacturer')
     # поля для того, чтобы заменить выпадашку на ввод информации
     raw_id_fields = ('device', )
+
+
